@@ -1,0 +1,1039 @@
+/*
+  Theme Name: Regna
+  Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+  Author: BootstrapMade.com
+  License: https://bootstrapmade.com/license/
+*/
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+html,
+body {
+    background: #fff;
+    color: #13328a;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    color: #13328a;
+}
+
+a:hover,
+a:active,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-align: center;
+    text-transform: capitalize !important;
+}
+
+p,a{
+    text-transform: capitalize !important;
+}
+/* Prelaoder */
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff url("../img/preloader.svg") no-repeat center center;
+}
+
+
+/* Back to top button */
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 6px 12px 9px 12px;
+    font-size: 16px;
+    border-radius: 2px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+}
+
+.back-to-top:focus {
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    outline: none;
+}
+
+.back-to-top:hover {
+    background: #2dc997;
+    color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+    padding: 30px 0;
+    height: 92px;
+    position: fixed;
+    background-color: white;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+
+#header #logo {
+    float: left;
+}
+
+#header #logo h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 6px 0;
+    line-height: 1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#header #logo h1 a,
+#header #logo h1 a:hover {
+    color: #fff;
+}
+
+#header #logo img {
+    padding: 0;
+    margin: 0;
+}
+
+#header.header-fixed {
+    background: white;
+    padding: 20px 0;
+    height: 72px;
+    transition: all 0.5s;
+}
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/hero-bg.jpg) top center;
+    background-size: cover;
+    position: relative;
+}
+#hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#hero h1 {
+    margin: 30px 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+}
+#hero h2 {
+    color: #eee;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+#hero .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#hero .btn-get-started:hover {
+    background: #2dc997;
+    border: 2px solid #2dc997;
+}
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+
+/* Nav Menu Essentials */
+
+.nav-menu,
+.nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-menu ul {
+    top: 100%;
+    left: 0;
+    z-index: 99;
+}
+.nav-menu ul li {
+    min-width: 100% !important;
+}
+.nav-menu li {
+    position: relative;
+    white-space: nowrap;
+}
+.nav-menu ul.megamenu_ul {
+        margin: 0 0 0 0;
+ }                                    
+
+.nav-menu>li {
+    float: left;
+}
+
+.nav-menu li:hover>ul,
+.nav-menu li.sfHover>ul {
+    display: block;
+}
+
+.nav-menu ul ul {
+    top: 0;
+    left: 100%;
+}
+
+.nav-menu ul li {
+    min-width: 180px;
+}
+
+
+/* Nav Menu Arrows */
+
+.sf-arrows .sf-with-ul {
+    padding-right: 30px;
+}
+
+.sf-arrows .sf-with-ul:after {
+    content: "\f107";
+    position: absolute;
+    right: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+    content: "\f105";
+}
+
+
+/* Nav Meu Container */
+
+#nav-menu-container {
+    margin-left: 100px;
+}
+
+/* Nav Meu Styling */
+
+.nav-menu a {
+    padding: 0 8px 10px 8px;
+    text-decoration: none;
+    display: inline-block;
+    color: #13328a;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 15px;
+    outline: none;
+}
+
+.header_icon a,
+.header_icon i {
+    color: #13328a;
+}
+
+.nav-menu>li {
+    margin-left: 10px;
+}
+
+.nav-menu>li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #d7060d;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-menu a:hover:before,
+.nav-menu li:hover>a:before,
+.nav-menu .menu-active>a:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.nav-menu ul {
+    margin: 4px 0 0 0;
+    border: 1px solid #e7e7e7;
+}
+
+.nav-menu ul li {
+    background: #fff;
+    padding-left: 10px;
+}
+
+.nav-menu ul li:first-child {
+    border-top: 0;
+}
+
+.nav-menu ul li a {
+    padding: 10px;
+    color: #333;
+    transition: 0.3s;
+    display: block;
+    font-size: 13px;
+    text-transform: none;
+}
+
+.nav-menu ul li a:hover {
+    color: #fff;
+}
+
+.nav-menu ul ul {
+    margin: 0;
+}
+
+
+/* Mobile Nav Toggle */
+
+#mobile-nav-toggle {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    margin: 20px 20px 0 0;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    display: none;
+    transition: all 0.4s;
+    outline: none;
+    cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+    color: #fff;
+}
+
+/* Mobile Nav Styling */
+
+#mobile-nav {
+    position: fixed;
+    top: 0;
+    padding-top: 18px;
+    bottom: 0;
+    z-index: 998;
+    background: rgba(52, 59, 64, 0.9);
+    left: -260px;
+    width: 260px;
+    overflow-y: auto;
+    transition: 0.4s;
+}
+
+#mobile-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#mobile-nav ul li {
+    position: relative;
+}
+
+#mobile-nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    overflow: hidden;
+    padding: 10px 22px 10px 15px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    outline: none;
+}
+
+#mobile-nav ul li a:hover {
+    color: #fff;
+}
+
+#mobile-nav ul li li {
+    padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+    color: #2dc997;
+}
+
+#mobile-nav ul .menu-item-active {
+    color: #2dc997;
+}
+
+#mobile-body-overly {
+    width: 100%;
+    height: 100%;
+    z-index: 997;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(52, 59, 64, 0.9);
+    display: none;
+}
+
+
+/* Mobile Nav body classes */
+
+body.mobile-nav-active {
+    overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+    left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+    color: #fff;
+}
+
+
+/* banner */
+
+.carousel-inner img {
+    width: 100%;
+}
+
+.Banner-column {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 92px;
+}
+.carousel-indicators .active {
+    background-color: #25446f;
+}
+
+/*--------------------------------------------------------------
+# Sections 1 
+--------------------------------------------------------------*/
+
+.sec1 {
+    margin-top: -31%;
+    padding-top: 36px;
+    text-align: center;
+    /* background-image: url(../img/bg3.jpg);  */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.sec1Row1 {
+    color: white;
+}
+
+.topSlogan {
+    font-weight: 900;
+    padding-top: 8px;
+}
+
+
+/* Sections Header
+--------------------------------*/
+
+.section-header .section-title {
+    font-size: 32px;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.section-header .section-description {
+    text-align: center;
+    padding-bottom: 40px;
+    color: #999;
+}
+
+
+/*  Our Packages  */
+
+.packagesImg {
+    width: 100%;
+    height: 60%;
+    border-radius: 30px;
+}
+
+
+/* caroursel */
+
+.gallery,
+.gallery-cell,
+.flickity-slider {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.gallery-cell {
+    width: 100%;
+    height: 300px;
+    margin-right: 10px;
+}
+
+.flickity-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/* cell number */
+
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+    /* content: counter(gallery-cell); */
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+.flickity-prev-next-button.previous {
+    left: 10px;
+}
+
+.flickity-prev-next-button.next {
+    right: 10px;
+}
+
+.flickity-viewport {
+    height: 250px;
+}
+
+.gallery .js-flickity .flickity-enabled .is-draggable {
+    height: 250px;
+}
+
+/* notification */
+
+.notification {
+    width: 30%;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+    background: #343b40;
+    padding: 30px 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+#footer .copyright {
+    text-align: center;
+}
+
+#footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #ccc;
+}
+
+
+/* flight ticket booking */
+
+.section {
+    position: relative;
+    height: 67vh;
+}
+
+.section .section-center {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#booking {
+    font-family: "Poppins", sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+
+.booking-form {
+    background: #233d6578;
+    padding: 40px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.booking-form .form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.booking-form .form-control {
+    background-color: #fff;
+    height: 40px !important;
+    color: #191a1e;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 40px;
+    padding: 0px 13px;
+}
+.form-control2{
+    margin-left: 15px !important;
+}
+.form-control-date_index_page{
+    width: 164px !important;
+    padding: 0px 10px !important;
+}
+.booking-form .form-control::-webkit-input-placeholder {
+    color: rgba(82, 82, 84, 0.4);
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+    color: rgba(82, 82, 84, 0.4);
+}
+
+.booking-form .form-control::placeholder {
+    color: rgba(82, 82, 84, 0.4);
+}
+
+.booking-form input[type="date"].form-control:invalid {
+    color: rgba(82, 82, 84, 0.4);
+}
+
+.booking-form select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    width: 32px;
+    line-height: 32px;
+    height: 32px;
+    text-align: center;
+    pointer-events: none;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+    content: '\279C';
+    display: block;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 24px;
+    height: 24px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.booking-form .form-checkbox input {
+    position: absolute !important;
+    margin-left: -9999px !important;
+    visibility: hidden !important;
+}
+
+.booking-form .form-checkbox label {
+    position: relative;
+    padding-top: 4px;
+    padding-left: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.booking-form .form-checkbox label+label {
+    margin-left: 15px;
+}
+
+.booking-form .form-checkbox input+span {
+    position: absolute;
+    left: 2px;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.booking-form .form-checkbox input+span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: #f23e3e;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.booking-form .form-checkbox input:not(:checked)+span:after {
+    opacity: 0;
+}
+
+.booking-form .form-checkbox input:checked+span:after {
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+}
+
+.booking-form .form-btn {
+    margin-top: 27px;
+}
+
+.booking-form .submit-btn {
+    color: #fff;
+    background-color: #f23e3e;
+    font-weight: 400;
+    height: 50px;
+    font-size: 14px;
+    border: none;
+    width: 100%;
+    border-radius: 40px;
+    text-transform: uppercase;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.booking-form .submit-btn:hover,
+.booking-form .submit-btn:focus {
+    opacity: 0.9;
+}
+
+
+/*  new code */
+
+.packages h5 {
+    font-weight: 600;
+}
+
+.ImgColumn h6 {
+    margin-top: 20px;
+}
+
+.packagesImgResize {
+    height: 50%;
+}
+
+
+/* footer */
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-section {
+    background: #0e2e88;
+    position: relative;
+}
+.footer-text p {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+}
+
+.footer-social-icon span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer-social-icon a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.footer-social-icon i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+
+.facebook-bg {
+    background: #3B5998;
+}
+
+.twitter-bg {
+    background: #55ACEE;
+}
+
+.google-bg {
+    background: #DD4B39;
+}
+
+.footer-widget-heading h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.OurServicesHeading h3::before {
+    left: 120px !important;
+}
+
+.footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 75px;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: #d7060d;
+}
+
+.footer-widget ul li {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 2px;
+    padding-left: 30px;
+}
+
+.OurServices li {
+    padding-left: 98px !important;
+}
+
+.footer-widget ul li a:hover {
+    color: white;
+}
+
+.footer-widget ul li a {
+    color: #b9a7a7;
+    text-transform: capitalize;
+}
+
+.subscribe-form {
+    position: relative;
+    overflow: hidden;
+    padding: 0 277px;
+}
+
+.subscribe-form input {
+    width: 100%;
+    padding: 14px 28px;
+    background: #fffbfb;
+    border: 1px solid #0e2e88;
+    color: #fff;
+    height: 55px;
+    border-radius: 10px;
+}
+
+.subscribe-form button {
+    position: absolute;
+    right: 24%;
+    background: #13338a;
+    padding: 13px 20px;
+    border: 1px solid #13338a;
+    top: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.subscribe-form button i {
+    color: white;
+    font-size: 22px;
+    transform: rotate(-6deg);
+}
+
+.copyright-area {
+    background:white;
+    padding: 25px 0;
+}
+
+.copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color:#0e2e88;
+}
+
+.copyright-text p a {
+    color: #d7060d;
+}
+
+.footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+    color: #d7060d;
+}
+
+.footer-menu li a {
+    font-size: 14px;
+    color: #b9a7a7;
+}
+
+
+/*  carousel */
+
+.gallery {
+    background: #EEE;
+}
+
+.gallery-cell img {
+    width: auto;
+    height: auto;
+    margin: 0 60px;
+}
+
+/* mega menu */
+
+.navbar .dropdown-menu div[class*="col"] {
+    margin-bottom: 1rem;
+}
+
+.navbar .dropdown-menu {
+    border: none;
+    background-color: #0060c8!important;
+}
+
+
+img.dowloadlink {
+    width: 90px;
+}
+
+.dowloadlink_heading h3::before {
+    left: 122px !important;
+}
+
+.payment_option_icon {
+    font-size: 30px;
+}
+
+/* modal */
+.btn-secondary {
+    color: #fff;
+    background-color: #0c3f8a !important;
+border-color: #0c3f8a !important;
+}
+.login_menu{
+  display: flex;
+  justify-content: flex-end;
+}
+/*  login page css */
+.login_header{
+    display: flex;
+    justify-content: space-between;
+}
+.support{
+    padding-top: 30px;
+}
+.support a i{
+    font-size: 25px;
+    margin: 10px;
+}
+.loginbanner{
+    background-image: url('../img/banner3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}

@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+    <script src="./lib/flickity.pkgd.js"></script>
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        * {
+            list-style: none;
+        }
+        
+        .packages img {
+            width: 100%;
+            border-radius: 40px;
+        }
+        
+        .header_icon {
+            color: #f23e3e !important;
+        }
+        
+        #logo a img {
+            width: 122px;
+            margin-left: 38px;
+        }
+        
+        .packages h6 {
+            padding-top: 15px;
+        }
+        
+        .dropdown-menu {
+            width: 42rem;
+            top: 30px;
+        }
+        
+        .post_login_banner {
+            position: relative;
+            height: 71vh;
+        }
+        
+        .booking-form {
+            margin-top: 25px;
+            background: #233d65eb;
+        }
+        
+        .carousel-item {
+            top: -17px;
+        }
+        
+        .carousel-indicators {
+            left: 10%;
+            top: 94%;
+        }
+        
+        .Banner-column {
+            margin-top: 42px;
+        }
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 86vh;
+        }
+        
+        .navbar-nav li:hover>ul.dropdown-menu {
+            display: block;
+        }
+        
+        .dropdown-submenu {
+            position: relative;
+        }
+        
+        .dropdown-submenu>.dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -6px;
+        }
+        /* rotate caret on hover */
+        
+        .dropdown-menu>li>a:hover:after {
+            text-decoration: underline;
+            transform: rotate(-90deg);
+        }
+        
+        .booking-form {
+            height: 86vh;
+        }
+        
+        .form-check {
+            padding-top: 6px;
+        }
+        
+        .booking-form .submit-btn {
+            height: 44px;
+            margin-top: 0;
+        }
+        
+        .nav-menu ul li a:hover {
+            color: #020202;
+        }
+        
+        .dropdown-toggle::after {
+            color: red;
+        }
+        
+        .copyright-area {
+            background: #344c71;
+        }
+        
+        .copyright-text p {
+            color: white;
+        }
+        
+        .home {
+            display: none;
+            position: fixed;
+            z-index: 997;
+            background-color: rgb(98 119 152);
+            left: 23%;
+            top: 12%;
+        }
+        
+        .home ul {
+            padding: 15px 0;
+            line-height: 40px;
+        }
+        
+        .home ul li {
+            width: 100%;
+            padding: 0 15px;
+        }
+        
+        .home ul :hover {
+            background: red;
+        }
+        
+        .home ul li a {
+            color: white;
+        }
+        
+        .show_li {
+            display: block;
+        }
+        /*  marquee  */
+        
+        b {
+            font-size: 26px;
+            color: red;
+        }
+    </style>
+    <title>JPK Holidays</title>
+</head>
+
+<body>
+
+    <body>
+
+        <!--==========================
+      Header
+      ============================-->
+        <header id="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div id="logo" class="pull-left">
+                            <a href="#hero"><img style="margin-top: -25px;margin-left: 38px;" src="./img/logo.jpg" alt="logo" title="logo" /></img>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <nav id="nav-menu-container">
+                            <ul class="nav-menu">
+                                <li class="menu-active">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="header_icon fa fa-plane" aria-hidden="true"></i> Flights </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="width: 200px;">
+                                        <li><a class="dropdown-item" href="#">markup</a></li>
+                                        <li><a class="dropdown-item" href="#">travel calendar</a></li>
+                                        <li><a class="dropdown-item" href="#">series calendar</a></li>
+                                        <li><a class="dropdown-item" href="#">series data entry</a></li>
+                                        <li><a class="dropdown-item" href="#">search all booking</a></li>
+                                        <li><a class="dropdown-item" href="#">billing compiled report</a></li>
+                                        <li><a class="dropdown-item" href="#">import PNR</a></li>
+                                        <li><a class="dropdown-item" href="#">cancellation report</a></li>
+                                        <li><a class="dropdown-item" href="#">refund report</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#account" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="header_icon fa fa-bed"></i> Hotel </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="width: 200px;">
+                                        <li><a class="dropdown-item" href="#">Markup</a></li>
+                                        <li><a class="dropdown-item" href="#">Service Charge</a></li>
+                                        <li><a class="dropdown-item" href="#">Search Booking</a></li>
+                                        <li><a class="dropdown-item" href="#">Booking Report</a></li>
+                                        <li><a class="dropdown-item" href="#">Pending Booking Report</a></li>
+                                        <li><a class="dropdown-item" href="#">Cancellation Report</a></li>
+                                        <li><a class="dropdown-item" href="#">Refund Report</a></li>
+                                    </ul>
+                                </li>
+                                <li class="holidays"><a href="#holidays"><i class="header_icon fas fa-suitcase-rolling"></i> Holidays</li>
+                                <li class="flight"><a href="#visa"><i class="header_icon fas fa-passport"></i></i> Visa</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href="#account" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="header_icon fa fa-user"></i> Account </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="width: 200px;">
+                                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">Desk Management</a></li>
+                                        <li><a class="dropdown-item" href="#">Privilage Entry</a></li>
+                                        <li><a class="dropdown-item" href="#">Reset Password</a></li>
+                                        <li><a class="dropdown-item" href="#">Recharge my Account</a></li>
+                                        <li><a class="dropdown-item" href="#">Bank Details</a></li>
+                                        <li><a class="dropdown-item" href="#">Set Balance Alert</a></li>
+                                        <li><a class="dropdown-item" href="#">Ledger</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> More </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="width: 100%;">
+                                        <li><a class="dropdown-item" href="#">option 1</a></li>
+                                        <li><a class="dropdown-item" href="#">option 2</a></li>
+                                        <li><a class="dropdown-item" href="#">option 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </nav>
+                    </div>
+                    <div class="login_menu col-md-3">
+                        <div class="header_icon col-sx-3" style="margin-right: 22px;">
+                            <i class="header_icon fas fa-user-circle" title="Profile"></i><a title="Profile" href="./login.html"> Profile </a>
+                        </div>
+                        <div class="header_icon col-sx-3" style="margin-right: 22px;">
+                            <i class="header_icon fas fa-headset" style="padding-left:10px" aria-hidden="true" title="Support"></i><a title="Support" href="tel:+9188009 61737"> Support </a>
+                        </div>
+                        <div class="header_icon Sign_up col-sx-3" id="myModal">
+                            <i class="header_icon fas fa-sign-in-alt" title="Logout"></i><a title="Logout" href="./index.html"> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <br><br>
+        <!-- #header -->
+        <div class="post_login_banner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="booking" class="">
+                            <div class="section-center">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="booking-form">
+                                            <form>
+                                                <div class="form-group">
+                                                    <div class="form-checkbox">
+                                                        <label for="one-way">
+                                                            <input type="radio" id="one-way" name="flight-type" checked>
+                                                            <span></span>One way
+                                                        </label>
+                                                        <label for="roundtrip">
+                                                            <input type="radio" id="roundtrip" name="flight-type" >
+                                                            <span></span>Roundtrip
+                                                        </label>
+                                                        <label for="multi-city">
+                                                            <input type="radio" id="multi-city" name="flight-type">
+                                                            <span></span>Multi-City
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <span class="form-label">Flying from</span>
+                                                            <input class="form-control" type="text" placeholder="City or airport">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <span class="form-label">Flyning to</span>
+                                                            <input class="form-control" type="text" placeholder="City or airport">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <span class="form-label">Departing</span>
+                                                            <input class="form-control form-control-date" type="date" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <span class="form-label">Returning</span>
+                                                            <input class="form-control form-control-date" type="date" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <span class="form-label">Adults (12+ yrs)</span>
+                                                            <select class="form-control">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                                <option>6</option>
+                                                                <option>7</option>
+                                                                <option>8</option>
+                                                                <option>9</option>
+                                                            </select>
+                                                            <span class="select-arrow"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <span class="form-label">Children (2 - 12 yrs)</span>
+                                                            <select class="form-control">
+                                                                <option>Children</option>
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                                <option>6</option>
+                                                                <option>7</option>
+                                                                <option>8</option>
+                                                                </select>
+                                                            <span class="select-arrow"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <span class="form-label">Infant (0 - 24 Month)</span>
+                                                            <select class="form-control">
+                                                                <option>Infant</option>
+                                                                <option>1</option>
+                                                                </select>
+                                                            <span class="select-arrow"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <span class="form-label">Travel class</span>
+                                                            <select class="form-control">
+                                                                <option>Economy class</option>
+                                                                <option>Business class</option>
+                                                                <option>First class</option>
+                                                                </select>
+                                                            <span class="select-arrow"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-5" style="padding-top: 30px;">
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1" style="color: white;">Direct Flights</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-btn">
+                                                            <button class="submit-btn">Show flights</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 Banner-column">
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+                            <ul class="carousel-indicators">
+                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo" data-slide-to="1"></li>
+                                <li data-target="#demo" data-slide-to="2"></li>
+                                <li data-target="#demo" data-slide-to="3"></li>
+                                <li data-target="#demo" data-slide-to="4"></li>
+                            </ul>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/banner1.jpg" alt="banner1" width="100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/banner2.jpg" alt="banner2" width="100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/banner3.jpg" alt="banner3" width="100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/banner4.jpg" alt="banner4" width="100%">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/banner5.png" alt="banner5" width="100%">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <br><br>
+        <section>
+            <div class="container" style="margin-top: 37px;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="important_notice">
+                            <div class="news">
+                                <span><b>Important Notice</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="text" style="font-size: 18px;">
+                            <marquee direction="left">
+                                <span>For flights which have been cancelled, we have protected your booking... 
+                                    Customers who have booked their travel through a travel agent/online portal are requested to 
+                                    connect with the travel agent directly to redeem their credit note.</span>
+                            </marquee>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer-section" style="margin-top: 15px;">
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                            <div class="copyright-text">
+                                <p>Copyright &copy; 2021, All Right Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+
+</html>
